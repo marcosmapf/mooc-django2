@@ -20,4 +20,5 @@ app_name='core'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('simplemooc.core.urls', namespace='core')),
+    path('cursos', include('simplemooc.courses.urls', namespace='courses')),
 ]
